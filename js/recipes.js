@@ -1,5 +1,5 @@
 async function loadRecipes() {
-    const response = await fetch('../data/popular_recipes.json');
+    const response = await fetch('./data/popular_recipes.json');
     const recipes = await response.json();
 
     console.log(recipes)
@@ -11,7 +11,7 @@ function renderRecipes(recipes) {
     container.innerHTML = '';
     recipes.forEach(meal => {
         const card = document.createElement('a');
-        card.href = `/recipe.html?id=${meal.id}`
+        card.href = `recipe.html?id=${meal.id}`
         card.className = 'recipe';
         card.innerHTML = `
             <img class="recipe_img" src="${meal.strMealThumb}" alt="${meal.strMeal}">
