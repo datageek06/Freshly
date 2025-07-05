@@ -1,0 +1,26 @@
+[
+    {
+        "id": "53083",
+        "strMeal": "Lamb Pilaf (Plov)",
+        "strCategory": "Lamb",
+        "strMealThumb": "https://www.themealdb.com/images/media/meals/kos9av1699014767.jpg"
+    },
+    {
+        "id": "52925",
+        "strMeal": "Split Pea Soup",
+        "strCategory": "Soup,Warm",
+        "strMealThumb": "https://www.themealdb.com/images/media/meals/xxtsvx1511814083.jpg"
+    },
+    {
+        "id": "53085",
+        "strMeal": "15-minute chicken & halloumi burgers",
+        "strCategory": "Chicken",
+        "strMealThumb": "https://www.themealdb.com/images/media/meals/vdwloy1713225718.jpg"
+    },
+    {
+        "id": "52784",
+        "strMeal": "Smoky Lentil Chili with Squash",
+        "strCategory": "Vegetarian",
+        "strMealThumb": "https://www.themealdb.com/images/media/meals/uwxqwy1483389553.jpg"
+    }
+]

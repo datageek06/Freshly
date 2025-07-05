@@ -1,0 +1,489 @@
+body {
+    margin: 0;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.hero {
+    background-image: url('/img/1.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    z-index: 999;
+    padding: 0 20px;
+}
+
+header.transparent {
+    background-color: transparent;
+}
+
+header.solid {
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); 
+}
+
+.navbar {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo img {
+    height: 28px;
+    width: 28px;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    font-size: 16px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.menu-popup {
+  position: fixed;
+  inset: 0;
+  background: white;
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.menu-popup.open {
+  display: flex;
+}
+
+.close-menu {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.popup-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.popup-nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+.popup-nav .add-recipe-btn {
+  margin-top: 24px;
+  background: #f26522;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-weight: bold;
+}
+
+.hamburger{
+    font-size: 24px;
+    display: none;
+}
+
+.add-button {
+    background-color: #f26522;
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 150ms all;
+}
+.add-button:hover{
+    opacity: 0.8;
+    scale: 1.05;
+}
+
+.avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+
+    transition: 150ms all;
+}
+.avatar:hover{
+    opacity: 0.8;
+}
+
+.main-text {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #222;
+    text-align: center;
+    border-radius: 12px;
+    width: 100%;
+}
+
+.main-text h1 {
+    font-size: 64px;
+    font-weight: 700;
+}
+.main-text p {
+    margin-top: 12px;
+}
+
+
+
+.popular{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+
+/* Recipes */
+.recipes_container {
+    margin: 100px auto;
+}
+.recipes_container_text h3 {
+    font-size: 28px;
+    font-weight: 700;
+}
+.recipes_container_text p {
+    color: #626262;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+.recipe {
+    max-width: 270px;
+}
+.recipe_img {
+    width: 270px;
+    height: 370px;
+
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.recipe_body { 
+    margin-top: 5px;
+}
+.recipe_body h3 {
+    font-weight: 600;
+}
+.recipe_body p {
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+/* Categories */
+.categories_container{
+    margin-bottom: 100px;
+}
+.categories{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    padding: 20px;
+}
+.category {
+    display: flex;
+    align-items: center;
+}
+.category_img {
+    width: 120px;
+    height: 70px;
+
+    border-radius: 10px;
+    object-fit: cover;
+}
+.category_title{
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.categories_container_text h3 {
+    font-size: 28px;
+    font-weight: 700;
+}
+.categories_container_text p {
+    color: #626262;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+/* Our Team */
+.team {
+    background-image: url('/img/4.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.team_container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.team_title{
+    font-size: 36px;
+    font-weight: 700;
+    
+}
+.team_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.team_card {
+    max-width: 300px;
+    background-color: #fff8f0;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 20px;
+    margin-top: 50px;
+}
+.team_card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.team_card h3 {
+    margin: 10px 0 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.team_card h4 {
+    margin: 0 0 10px;
+    font-weight: normal;
+    color: #555;
+}
+.team_card p {
+    padding: 0 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+
+
+
+
+/* Footer */
+footer {
+    background-color: #f1e4d1;
+}
+.footer_container {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-left,
+.footer-center,
+.footer-right {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.footer-center a {
+    display: block;
+    margin-bottom: 8px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-left h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    color: #222;
+    cursor: pointer;
+}
+
+.footer-right h4 {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-right input {
+    border: none;
+    border-bottom: 1px solid #333;
+    background: transparent;
+    padding: 5px;
+    width: 100%;
+    font-size: 14px;
+    color: #333;
+}
+
+
+
+
+
+
+@media (max-width: 1250px) {
+    .popular{
+        padding-left: 25px;
+    }
+    .recipes {
+        display: flex;
+        overflow-x: auto;
+        gap: 16px;
+        padding-bottom: 8px;
+        scroll-snap-type: x mandatory;
+    }
+
+    .recipe {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+    }
+
+    .main-text h1{
+        font-size: 48px;
+    }
+
+    .team_container{
+        padding: 50px 25px;
+    }
+}
+@media (max-width: 1024px) {
+    .categories{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .main-text{
+        top: 30%;
+    }
+    .main-text p{
+        display: none;
+    }
+    .team_cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 768px) {
+    .recipe{
+        width: 230px;
+    }
+    .recipe_img{
+        height: 320px;
+    }
+    .main-text h1{
+        font-size: 36px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .navbar-right{
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    header {
+        padding: 0 30px;
+        backdrop-filter: unset !important;
+    }
+    .team_cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .categories{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

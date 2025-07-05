@@ -1,0 +1,42 @@
+[
+    {
+        "idCategory": "7",
+        "strCategory": "Pork",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/pork.png"
+    },
+    {
+        "idCategory": "1",
+        "strCategory": "Beef",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/beef.png"
+    },
+    {
+        "idCategory": "3",
+        "strCategory": "Dessert",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/dessert.png"
+    },
+    {
+        "idCategory": "6",
+        "strCategory": "Pasta",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/pasta.png"
+    },
+    {
+        "idCategory": "8",
+        "strCategory": "Seafood",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/seafood.png"
+    },
+    {
+        "idCategory": "12",
+        "strCategory": "Vegetarian",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/vegetarian.png"
+    },
+    {
+        "idCategory": "13",
+        "strCategory": "Breakfast",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/breakfast.png"
+    },
+    {
+        "idCategory": "9",
+        "strCategory": "Side",
+        "strCategoryThumb": "https://www.themealdb.com/images/category/side.png"
+    }
+]
