@@ -75,7 +75,6 @@ header.solid {
     gap: 16px;
 }
 
-/* Fullscreen overlay */
 .menu-popup {
   position: fixed;
   inset: 0;
@@ -88,12 +87,10 @@ header.solid {
   padding: 40px;
 }
 
-/* Show popup */
 .menu-popup.open {
   display: flex;
 }
 
-/* Close (X) button */
 .close-menu {
   position: absolute;
   top: 24px;
@@ -104,7 +101,6 @@ header.solid {
   cursor: pointer;
 }
 
-/* Menu links */
 .popup-nav {
   display: flex;
   flex-direction: column;
@@ -165,7 +161,7 @@ header.solid {
 
 
 .hero {
-    background-image: url('/img/Search.png');
+    background-image: url('../img/Search.png');
     background-size: cover;
     background-position: center;
     height: 20vh;

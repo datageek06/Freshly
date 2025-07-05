@@ -28,7 +28,7 @@ function renderRecipes(recipes) {
 
 
 async function loadCategories() {
-    const response = await fetch('../data/popular_categories.json');
+    const response = await fetch('./data/popular_categories.json');
     const categories = await response.json();
 
     renderCategories(categories);

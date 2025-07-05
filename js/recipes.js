@@ -53,7 +53,7 @@ async function searchMeals(query) {
 function renderResults(meals) {
   const resultsTitle = meals.length > 0 ? '<h3 class="result_text">Results:</h3>' : '';
   const resultsHTML = meals.map(meal => `
-    <a class="card" href="/recipe.html?id=${meal.idMeal}">
+    <a class="card" href="recipe.html?id=${meal.idMeal}">
         <img class="recipe_img" src="${meal.strMealThumb}" alt="${meal.strMeal}">
         <div class="recipe_body">
             <h3>${meal.strMeal}</h3>

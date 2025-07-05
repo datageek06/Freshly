@@ -17,7 +17,7 @@ function renderFavorites() {
   favorites.forEach(meal => {
     const card = document.createElement('a');
     card.className = 'recipe';
-    card.href = `/recipe.html?id=${meal.idMeal}`;
+    card.href = `recipe.html?id=${meal.idMeal}`;
     card.innerHTML = `
       <img class="recipe_img" src="${meal.strMealThumb}" alt="${meal.strMeal}">
       <div class="recipe_body">
