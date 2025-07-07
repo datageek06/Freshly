@@ -9,3 +9,8 @@ Design:
 
 API:
 <br>https://www.themealdb.com/api.php
+
+
+<br>
+<br>
+Github Pages: https://datageek06.github.io/Freshly/
